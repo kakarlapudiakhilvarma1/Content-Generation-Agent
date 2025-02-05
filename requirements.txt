@@ -1,1 +1,6 @@
-
+python-dotenv
+crewai
+crewai-tools
+streamlit
+fpdf
+markdown
