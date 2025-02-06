@@ -16,15 +16,16 @@ A powerful AI-powered content generation platform built with CrewAI and Gemini, 
 ## 📸 Screenshots
 
 ### Main Interface
-![Main Interface](screenshots/main_interface.png)
+![image](https://github.com/user-attachments/assets/f0e8ce96-254b-49a8-bd24-446b5ee02190)
 *The main dashboard with content configuration options*
 
 ### Content Generation Process
-![Generation Process](screenshots/generation_process.png)
+![image](https://github.com/user-attachments/assets/a9f5a913-988b-4107-b5ac-93f9a4a4bfcd)
 *Real-time progress tracking during content generation*
 
 ### Generated Content
-![Generated Content](screenshots/generated_content.png)
+![image](https://github.com/user-attachments/assets/b1cdb553-03b5-45da-bddd-081b16f07db8)
+![image](https://github.com/user-attachments/assets/1cf7d81f-7294-4af2-8a3f-ff84abf1c64d)
 *Example of generated content with download options*
 
 ## 🚀 Quick Start
@@ -39,7 +40,7 @@ A powerful AI-powered content generation platform built with CrewAI and Gemini, 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/kakarlapudiakhilvarma1/content-generation-agent.git
+git clone https://github.com/kakarlapudiakhilvarma1/Content-Generation-Agent.git
 cd content-generation-agent
 ```
 
