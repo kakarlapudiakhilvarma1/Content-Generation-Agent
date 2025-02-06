@@ -1,6 +1,6 @@
 # Content Generation Agent 📝
 
-![Content Generation Agent Banner](screenshots/banner.png)
+![image](https://github.com/user-attachments/assets/190717c6-dc0f-48f4-8d41-984ce02afeed)
 
 A powerful AI-powered content generation platform built with CrewAI and Gemini, featuring automated research and professional writing capabilities.
 
