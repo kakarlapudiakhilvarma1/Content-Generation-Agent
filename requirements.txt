@@ -4,3 +4,4 @@ crewai-tools
 streamlit
 fpdf
 markdown
+pysqlite3-binary
