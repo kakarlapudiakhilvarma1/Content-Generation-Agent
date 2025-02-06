@@ -25,8 +25,13 @@ A powerful AI-powered content generation platform built with CrewAI and Gemini, 
 
 ### Generated Content
 ![image](https://github.com/user-attachments/assets/b1cdb553-03b5-45da-bddd-081b16f07db8)
+
 ![image](https://github.com/user-attachments/assets/1cf7d81f-7294-4af2-8a3f-ff84abf1c64d)
 *Example of generated content with download options*
+
+### Dowloaded PDF
+![image](https://github.com/user-attachments/assets/d3c58390-7b4c-4534-a3f4-0781df7b5145)
+
 
 ## 🚀 Quick Start
 
