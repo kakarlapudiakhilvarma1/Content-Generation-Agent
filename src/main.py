@@ -1,14 +1,14 @@
+__import__('pysqlite3')
+import sys
+
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 import streamlit as st
 import os
 from utils.api_checker import check_api_key
 from utils.pdf_generator import markdown_to_pdf
 from agents.content_crew import generate_content
 import time
-
-__import__('pysqlite3')
-import sys
-
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 
 # Configure Streamlit page
