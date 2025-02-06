@@ -5,3 +5,5 @@ streamlit
 fpdf
 markdown
 pysqlite3-binary
+chromadb
+
