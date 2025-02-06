@@ -10,10 +10,9 @@ from utils.pdf_generator import markdown_to_pdf
 from agents.content_crew import generate_content
 import time
 
-
 # Configure Streamlit page
 st.set_page_config(
-    page_title="AI Content Studio",
+    page_title="Content Generation Agent",
     page_icon="✍️",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -209,7 +208,7 @@ with st.sidebar:
             "Maximum Word Count",
             min_value=500,
             max_value=5000,
-            value=1500,
+            value=1000,
             step=500,
             help="Set the maximum length of the generated content"
         )
