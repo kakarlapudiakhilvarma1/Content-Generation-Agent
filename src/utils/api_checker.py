@@ -5,6 +5,19 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
+def validate_api_key(api_key):
+    """Validate API key format and length"""
+    if not api_key:
+        return False
+    if not isinstance(api_key, str):
+        return False
+    if len(api_key.strip()) == 0:
+        return False
+    # Check if it matches basic Gemini API key format
+    if not api_key.startswith('AI'):
+        return False
+    return True
+
 def check_api_key():
     """Check if Gemini API key exists in environment variables or session state"""
     api_key = os.getenv('GEMINI_API_KEY')
@@ -17,21 +30,22 @@ def check_api_key():
             input_api_key = st.text_input(
                 "Please enter your Gemini API key:",
                 type="password",
-                help="Your API key will be stored securely in the session state"
+                help="Get your API key from https://makersuite.google.com/app/apikey"
             )
             
             submitted = st.form_submit_button("Submit API Key")
             
-            if submitted and input_api_key:
-                # Store in session state
-                st.session_state['GEMINI_API_KEY'] = input_api_key
-                # Also set it in environment for this session
-                os.environ['GEMINI_API_KEY'] = input_api_key
-                st.success("✅ API key successfully stored!")
-                # Rerun to update the page
-                st.rerun()
-            elif submitted:
-                st.error("Please enter an API key")
+            if submitted:
+                if validate_api_key(input_api_key):
+                    # Store in session state
+                    st.session_state['GEMINI_API_KEY'] = input_api_key
+                    # Also set it in environment for this session
+                    os.environ['GEMINI_API_KEY'] = input_api_key
+                    st.success("✅ API key successfully stored!")
+                    # Rerun to update the page
+                    st.rerun()
+                else:
+                    st.error("Invalid API key format. Please check your API key and try again.")
         
         # Stop further execution until API key is provided
         st.stop()
