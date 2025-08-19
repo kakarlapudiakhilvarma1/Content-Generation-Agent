@@ -24,7 +24,7 @@ def generate_content(topic, content_type, target_audience, temperature, max_word
 
         # Configure LLM with validated API key
         llm = LLM(
-            model="gemini/gemini-2.5-pro-exp-03-25",  # Updated to use the correct model name
+            model="gemini/gemini-2.5-pro",  # Updated to use the correct model name
             api_key=api_key,
             temperature=temperature
         )
@@ -116,3 +116,4 @@ def generate_content(topic, content_type, target_audience, temperature, max_word
         raise Exception(f"API Key Error: {str(ve)}")
     except Exception as e:
         raise Exception(f"Content Generation Error: {str(e)}")
+
